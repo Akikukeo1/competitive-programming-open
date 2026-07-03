@@ -1,0 +1,33 @@
+[project]
+name = "atro"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "kagglehub>=1.0.2",
+    "optuna>=4.0.0",
+]
+
+[project.scripts]
+atro = "atro.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+initer = ["templates/**/*"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.15",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E701", "F841", "F401", "E501", "E741"]

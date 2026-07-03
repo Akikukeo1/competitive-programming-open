@@ -1,0 +1,5 @@
+[tools]
+rust = "latest"
+"cargo:pahcer" = "latest"
+node = "latest"
+pnpm = "latest"

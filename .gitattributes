@@ -1,0 +1,19 @@
+* text = auto
+
+*.toml     text eol = lf
+*.rs       text eol = lf
+*.lock     text eol = lf
+
+*.txt      text
+*.md       text
+*.json     text
+*.js       text
+*.py       text
+
+*.sh       text eol = lf
+*.bat      text eol = crlf
+*.ps1      text eol = crlf
+
+*.png      binary
+*.jpg      binary
+*.pdf      filter = lfs diff = lfs merge = lfs -text

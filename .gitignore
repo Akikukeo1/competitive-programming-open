@@ -1,0 +1,14 @@
+/venv
+/.ruff_cache
+*.exe
+*.ilk
+*.obj
+*.pdb
+**/__pycache__/
+**/target/
+**/node_modules/
+**/dist/
+**/build/
+/ABC/testABC
+/AHC/testAHC
+/src/atro.egg-info
